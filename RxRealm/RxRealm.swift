@@ -101,8 +101,10 @@ public extension Realm {
             Realm.realmOperationInThread(thread, writeOperation: writeOperation, completion: { error in
                 if let error = error {
                     observer.onError(error)
+                } else {
+                    observer.onNext(())
+                    observer.onCompleted()
                 }
-                observer.onCompleted()
                 }, operation: operation)
             return NopDisposable.instance
         }
