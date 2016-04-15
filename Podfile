@@ -1,4 +1,3 @@
-
 source 'https://github.com/CocoaPods/Specs.git'
 
 workspace 'RxRealm'
@@ -10,5 +9,5 @@ use_frameworks!
 
 xcodeproj 'RxRealm.xcodeproj'
 
-pod 'RealmSwift', '~> 0.96'
-pod 'RxSwift', '~> 2.0.0-beta'
+pod 'RealmSwift', '~> 0.98’
+pod 'RxSwift', '~> 2.4.0'
